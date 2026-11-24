@@ -4,6 +4,13 @@ A Bash script for processing and gridding one selected magnetometry survey field
 
 The workflow was prepared for data acquired using a ten-probe LeaMax fluxgate gradiometer equipped with Foerster FEREX CON650 probes. The script automates existing tools; it does not implement new decoding, drift-correction or gridding algorithms.
 
+## Download the script
+
+[View the Bash script](./process_magnetometry.sh)
+
+To download it, open the link above and click the download icon
+(Download raw file) in the upper-right corner of the file view.
+
 ## Requirements
 
 * Bash (run with `bash`, not `sh`).
