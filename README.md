@@ -11,7 +11,7 @@ The workflow was prepared for data acquired using a ten-probe LeaMax fluxgate gr
 * Eastern Atlas processing tools available on `PATH`:
 
   * `ealdec`: version dated 11 June 2018.
-  * `ealmat.m`: version dated 1 November 2019, with `ea\_fkt` dated 16 March 2018.
+  * `ealmat.m`: version dated 1 November 2019, with `ea_fkt` dated 16 March 2018.
   * `ealgrid.m`: version not recorded in this documentation.
 * Any additional runtime dependencies required by the installed Eastern Atlas tools.
 
@@ -38,13 +38,13 @@ The script does not search subdirectories.
 From the directory containing the input measurements:
 
 ```bash
-bash process/_magnetometry.sh a pliska 
+bash process_magnetometry.sh a pliska 
 ```
 
 If the script is stored elsewhere, provide its path while remaining in the input-data directory:
 
 ```bash
-bash /path/to/process/_magnetometry.sh a pliska 
+bash /path/to/process_magnetometry.sh a pliska 
 ```
 
 Arguments:
@@ -52,14 +52,14 @@ Arguments:
 |Argument|Example|Meaning|
 |-|-|-|
 |`field`|`a`|One letter identifying the field to process|
-|`survey/_label`|`pliska `|Non-empty label used in output filenames; must not contain `/`|
+|`survey_label`|`pliska `|Non-empty label used in output filenames; must not contain `/`|
 
 The example processes `a.001`, `a.002`, etc., merges their corrected data and exports one raster for field `a`. Files belonging to field `b` are not included.
 
 To process another field, run the script again:
 
 ```bash
-bash process\_magnetometry.sh b pliska 
+bash process_magnetometry.sh b pliska 
 ```
 
 The survey label is not a directory argument. All input and output paths are interpreted relative to the current working directory.
