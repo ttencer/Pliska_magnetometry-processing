@@ -38,13 +38,13 @@ The script does not search subdirectories.
 From the directory containing the input measurements:
 
 ```bash
-bash process\_magnetometry.sh a pliska 
+bash process/_magnetometry.sh a pliska 
 ```
 
 If the script is stored elsewhere, provide its path while remaining in the input-data directory:
 
 ```bash
-bash /path/to/process\_magnetometry.sh a pliska 
+bash /path/to/process/_magnetometry.sh a pliska 
 ```
 
 Arguments:
@@ -52,7 +52,7 @@ Arguments:
 |Argument|Example|Meaning|
 |-|-|-|
 |`field`|`a`|One letter identifying the field to process|
-|`survey\_label`|`pliska `|Non-empty label used in output filenames; must not contain `/`|
+|`survey/_label`|`pliska `|Non-empty label used in output filenames; must not contain `/`|
 
 The example processes `a.001`, `a.002`, etc., merges their corrected data and exports one raster for field `a`. Files belonging to field `b` are not included.
 
